@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Televisions | Appliance Energy Consumption</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" id="logo"><img src="PowerIcon.png" alt="Power logo"></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-item">Home</a></li>
+        <li><a href="televisions.html" class="nav-item">Televisions</a></li>
+        <li><a href="about.html" class="nav-item">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Television Energy Consumption</h1>
+    <p>
+     Larger screens and older display technologies (like plasma) tend to use more
+     energy, while modern LED and OLED televisions are generally more efficient.
+     Standby power also adds up switching TVs off fully, rather than leaving
+     them on standby, can reduce unnecessary electricity use.
+    </p>
+
+    <ul>
+        <li> Check the energy rating label and estimated annual kWh before buying. </li>
+        <li> Use "Eco" or power-saving picture modes where available. </li>
+        <li> Turn off always-on features like voice assistances if unused. </li>
+    </ul>
+
+    <section id="charts">
+        <h2> TV Energy Insights: Data Story </h2>
+      <p>
+        The following charts explore TV energy data currently available on the Australian market, based on analysis conducted on KNIME
+      </p>
+
+      <h3>Chart 1: What type of TV screen technologies are currently available in Australia and which are the most frequent? </h3>
+      <img src  = "Q1Pie Chart.png" alt = "Chart of TV screen technologies" style = "max-width: 100%; ">
+      <p>By the pie chart, we can see that LED is the most frequent type of TV screen whereas OLED is less common </p>
+
+      <h3>Chart 2: What screen sizes are currently available, and which are the most frequent? </h3>
+      <img src  = "Q2Bar Chart.png" alt = "Chart of TV screen sizes" style = "max-width: 100%; ">
+      <p> This bar chart shows that the most frequent screen sizes are between 55.0 and 65.0 inches </p>
+
+      <h3>Chart 3: Which brands have the greatest number of different models? </h3>
+      <img src  = "Q3Bar Chart.png" alt = "Chart of brands that have the greatest number of different models" style = "max-width: 100%; ">
+      <p> The bar chart shows that Brand Kogan has the greatest number of different models </p>
+
+      <h3>Chart 4: Which type of screen technology consumes the least amount of power? </h3>
+      <img src  = "Q4Bar Chart.png" alt = "Chart of TV screen that consumes the least amount of power" style = "max-width: 100%; ">
+      <p> LCD consumes the least amount of power among the different screen technologies whereas, OLED consumes the most </p>
+
+      <h3>Chart 5: What is the relationship between screen size and power use? </h3>
+      <img src  = "Q5Scatter Plot.png" alt = "Chart of TV screen sizes and power use" style = "max-width: 100%; ">
+      <p> The scatter plot shows a positive correlation between screen size and power use </p>
+
+      <h3>Chart 6: What is the relationship between star rating and screen size? </h3>
+      <img src  = "Q6Scatter Plot.png" alt = "Chart of TV screen sizes and star ratings" style = "max-width: 100%; ">
+      <p> Star ratings are fairly distributed across different screen sizes. 
+        Bigger screens are able to have higher star ratings as they often come with more advanced features and better picture quality.</p>
+
+      <h3>Chart 7: Are there differences in power consumption between brands? </h3>
+      <img src  = "Q7Box Plot.png" alt = "Chart of power consumption between brands" style = "max-width: 100%; ">
+      <p> The box plot shows that there are differences in power consumption between brands, with some brands offering more energy-efficient models than others.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Violet Grace Lim. Built with the assistance of GitHub Copilot for code generation.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

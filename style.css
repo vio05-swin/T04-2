@@ -1,0 +1,96 @@
+:root {
+  --primary: #1a1a2e;
+  --accent: #f4a600;
+  --text: #222;
+  --bg: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--primary);
+}
+
+nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+#logo {
+  color: var(--accent);
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+#logo img {
+  height: 32px;
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  padding: 0.4rem 0.2rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+/* mouse-over feedback */
+.nav-item:hover {
+  color: var(--accent);
+}
+
+/* current page indicator - class added by script.js */
+.nav-item.active {
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main h1 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+main p {
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  background: var(--primary);
+  color: white;
+  font-size: 0.85rem;
+}
